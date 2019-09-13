@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import api from "../../services/api";
 
 export default function ListMovies({ match }) {
@@ -13,6 +14,7 @@ export default function ListMovies({ match }) {
   }, []);
   return (
     <div>
+      <Link to="/logout">Sair</Link>
       {movies.length === 0 ? (
         <div>Nenhum filme Cadastrado!</div>
       ) : (
