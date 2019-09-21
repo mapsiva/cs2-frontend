@@ -1,5 +1,10 @@
 import React from "react";
+import Button from "@material-ui/core/Button";
 
 export default function Genres() {
-  return <h2>Genres</h2>;
+  return (
+    <Button variant="contained" color="primary">
+      Hello World
+    </Button>
+  );
 }

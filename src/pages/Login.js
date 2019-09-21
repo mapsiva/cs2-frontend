@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import api from "../services/api";
 import { login, isAuthenticated } from "../services/auth";
-
+import CurrentUser from "../components/CurrentUser";
 export default function Login({ history }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -31,6 +31,7 @@ export default function Login({ history }) {
 
   return (
     <div>
+      <CurrentUser nameUser="Marcio" />
       <form onSubmit={handleSubmit}>
         <div>
           <input
